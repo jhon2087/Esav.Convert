@@ -310,14 +310,11 @@
 
         function lnkDescargar_onClick(_url) {
 
-            
-            alert("direcion wifii");
+
+            window.location.href = _url;
 
         }
         function btnSalir_onclick() {
-
-            alert("ESTO ES UNA RPUE BA");
-
 
         }
 
