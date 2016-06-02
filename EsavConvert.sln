@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Esav.Convert", "..\Esav.Convert", "{750AB8F6-D966-4935-AB94-181026A95F1E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Esav.Convert"
+		Debug.AspNetCompiler.PhysicalPath = "..\Esav.Convert\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Esav.Convert\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Esav.Convert"
+		Release.AspNetCompiler.PhysicalPath = "..\Esav.Convert\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Esav.Convert\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "15069"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{750AB8F6-D966-4935-AB94-181026A95F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750AB8F6-D966-4935-AB94-181026A95F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

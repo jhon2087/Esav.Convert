@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConvertHtmlToPdf">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdfUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertHtmlToPdfResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertHtmlToPdfResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendEmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdfUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertPdfAndSendEmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailBody">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdfUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailBodyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertPdfAndSendEmailBodyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailFileNameFromBody">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdfUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreSalida" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailSalida" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailFileNameFromBodyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertPdfAndSendEmailFileNameFromBodyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailFileNameBody">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdfUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailFileNameBodyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertPdfAndSendEmailFileNameBodyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailBodyBooking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdfUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailBodyBookingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertPdfAndSendEmailBodyBookingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertPdfAndSendEmailList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pdfUrl" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="pdfDoc" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="coEmail" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConvertPdfAndSendEmailListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConvertPdfAndSendEmailListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConvertHtmlToPdfSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertHtmlToPdf" />
+  </wsdl:message>
+  <wsdl:message name="ConvertHtmlToPdfSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertHtmlToPdfResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmail" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailBodySoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailBody" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailBodySoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailFileNameFromBodySoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailFileNameFromBody" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailFileNameFromBodySoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailFileNameFromBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailFileNameBodySoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailFileNameBody" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailFileNameBodySoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailFileNameBodyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailBodyBookingSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailBodyBooking" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailBodyBookingSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailBodyBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailListSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailList" />
+  </wsdl:message>
+  <wsdl:message name="ConvertPdfAndSendEmailListSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertPdfAndSendEmailListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicesMailSoap">
+    <wsdl:operation name="ConvertHtmlToPdf">
+      <wsdl:input message="tns:ConvertHtmlToPdfSoapIn" />
+      <wsdl:output message="tns:ConvertHtmlToPdfSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <wsdl:input message="tns:SendEmailSoapIn" />
+      <wsdl:output message="tns:SendEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmail">
+      <wsdl:input message="tns:ConvertPdfAndSendEmailSoapIn" />
+      <wsdl:output message="tns:ConvertPdfAndSendEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailBody">
+      <wsdl:input message="tns:ConvertPdfAndSendEmailBodySoapIn" />
+      <wsdl:output message="tns:ConvertPdfAndSendEmailBodySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailFileNameFromBody">
+      <wsdl:input message="tns:ConvertPdfAndSendEmailFileNameFromBodySoapIn" />
+      <wsdl:output message="tns:ConvertPdfAndSendEmailFileNameFromBodySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailFileNameBody">
+      <wsdl:input message="tns:ConvertPdfAndSendEmailFileNameBodySoapIn" />
+      <wsdl:output message="tns:ConvertPdfAndSendEmailFileNameBodySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailBodyBooking">
+      <wsdl:input message="tns:ConvertPdfAndSendEmailBodyBookingSoapIn" />
+      <wsdl:output message="tns:ConvertPdfAndSendEmailBodyBookingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailList">
+      <wsdl:input message="tns:ConvertPdfAndSendEmailListSoapIn" />
+      <wsdl:output message="tns:ConvertPdfAndSendEmailListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicesMailSoap" type="tns:ServicesMailSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConvertHtmlToPdf">
+      <soap:operation soapAction="http://tempuri.org/ConvertHtmlToPdf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap:operation soapAction="http://tempuri.org/SendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmail">
+      <soap:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailBody">
+      <soap:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailBody" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailFileNameFromBody">
+      <soap:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailFileNameFromBody" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailFileNameBody">
+      <soap:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailFileNameBody" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailBodyBooking">
+      <soap:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailBodyBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailList">
+      <soap:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicesMailSoap12" type="tns:ServicesMailSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConvertHtmlToPdf">
+      <soap12:operation soapAction="http://tempuri.org/ConvertHtmlToPdf" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap12:operation soapAction="http://tempuri.org/SendEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmail">
+      <soap12:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailBody">
+      <soap12:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailBody" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailFileNameFromBody">
+      <soap12:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailFileNameFromBody" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailFileNameBody">
+      <soap12:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailFileNameBody" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailBodyBooking">
+      <soap12:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailBodyBooking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertPdfAndSendEmailList">
+      <soap12:operation soapAction="http://tempuri.org/ConvertPdfAndSendEmailList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicesMail">
+    <wsdl:port name="ServicesMailSoap" binding="tns:ServicesMailSoap">
+      <soap:address location="http://localhost/MailEsavGDN/ServicesMail.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicesMailSoap12" binding="tns:ServicesMailSoap12">
+      <soap12:address location="http://localhost/MailEsavGDN/ServicesMail.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

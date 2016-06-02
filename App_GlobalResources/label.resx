@@ -1,0 +1,1353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblIdioma" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="btnGrabar" xml:space="preserve">
+    <value>Grabar</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="lblUsuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="lnkOlvideClave" xml:space="preserve">
+    <value>Olvide Usuario y/o contraseña</value>
+  </data>
+  <data name="lblErrorCaptcha" xml:space="preserve">
+    <value>Incorrect Verification Code</value>
+  </data>
+  <data name="lblErrorCredenciales" xml:space="preserve">
+    <value>El usuario ó email no existe</value>
+  </data>
+  <data name="lblBuscar" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="lblDestino" xml:space="preserve">
+    <value>Destino</value>
+  </data>
+  <data name="lblFechaIda" xml:space="preserve">
+    <value>Fecha de Ida</value>
+  </data>
+  <data name="lblFechaVuelta" xml:space="preserve">
+    <value>Fecha de Vuelta</value>
+  </data>
+  <data name="lblIdayVuelta" xml:space="preserve">
+    <value>Ida y Vuelta</value>
+  </data>
+  <data name="lblMultiple" xml:space="preserve">
+    <value>Múltiples Destinos</value>
+  </data>
+  <data name="lblOrigen" xml:space="preserve">
+    <value>Origen</value>
+  </data>
+  <data name="lblSoloIda" xml:space="preserve">
+    <value>Sólo Ida</value>
+  </data>
+  <data name="lblDatosCuenta" xml:space="preserve">
+    <value>Datos de la Cuenta</value>
+  </data>
+  <data name="lblDatosPersonales" xml:space="preserve">
+    <value>Datos Personales</value>
+  </data>
+  <data name="lblDocumento" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="lblCorreo" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="lblFechaNacimiento" xml:space="preserve">
+    <value>Fecha de Nacimiento</value>
+  </data>
+  <data name="lblPais" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="lblSexo" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="lblDescripCuponera" xml:space="preserve">
+    <value>Una Cuponera contiene 8 cupones disponibles para realizar actividades turisticas y viajes</value>
+  </data>
+  <data name="lblCupones" xml:space="preserve">
+    <value>Cupones</value>
+  </data>
+  <data name="lblDesde" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="lblDetalle" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="lblFechaSalida" xml:space="preserve">
+    <value>Fecha de Salida</value>
+  </data>
+  <data name="lblHasta" xml:space="preserve">
+    <value>Hasta</value>
+  </data>
+  <data name="lblHoraTramo" xml:space="preserve">
+    <value>Hora de Viaje {0}</value>
+  </data>
+  <data name="lblPagina" xml:space="preserve">
+    <value>Página : {0} - {1} ({2} Registros)</value>
+  </data>
+  <data name="lblResultadoBusqueda" xml:space="preserve">
+    <value>Resultado de Búsqueda</value>
+  </data>
+  <data name="lblSalidaAE" xml:space="preserve">
+    <value>Salida: Hora y Origen</value>
+  </data>
+  <data name="lblReservar" xml:space="preserve">
+    <value>Reservar</value>
+  </data>
+  <data name="lblMoneda" xml:space="preserve">
+    <value>Moneda</value>
+  </data>
+  <data name="lblServiceFee" xml:space="preserve">
+    <value>Cargo por Servicio</value>
+  </data>
+  <data name="lblCopyright" xml:space="preserve">
+    <value>Área de Facturación Electrónica ESAV-DOC.</value>
+  </data>
+  <data name="lblSalir" xml:space="preserve">
+    <value>Cerrar Sesión</value>
+  </data>
+  <data name="lblRetornar" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="lblOpcionAE" xml:space="preserve">
+    <value>Opción Seleccionada</value>
+  </data>
+  <data name="lblCuponAE" xml:space="preserve">
+    <value>Cupon</value>
+  </data>
+  <data name="lblDatosPaxAE" xml:space="preserve">
+    <value>Datos Personales de los Pasajeros</value>
+  </data>
+  <data name="lblFNacimientoAE" xml:space="preserve">
+    <value>Fecha de Nacimiento</value>
+  </data>
+  <data name="lblNacionalidadAE" xml:space="preserve">
+    <value>Nacionalidad</value>
+  </data>
+  <data name="lblDocumentoIdentAE" xml:space="preserve">
+    <value>Documento de Identidad</value>
+  </data>
+  <data name="lblPaisEmisionAE" xml:space="preserve">
+    <value>País de Emisión</value>
+  </data>
+  <data name="lblEmailAE" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblObservacionesAE" xml:space="preserve">
+    <value>Observaciones</value>
+  </data>
+  <data name="lblEmailContAE" xml:space="preserve">
+    <value>Email del Contacto</value>
+  </data>
+  <data name="lblNuevoAE" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="lblEliminarAE" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="lblEditarAE" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="lblOlvidoContrasenha" xml:space="preserve">
+    <value>Olvido contraseña</value>
+  </data>
+  <data name="lblOlvidoContrasenhaBody" xml:space="preserve">
+    <value>Ingrese su usuario y pulse en aceptar, el sistema le enviara un email para poder cambiar su password</value>
+  </data>
+  <data name="lblEnviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="lblEquipoGoGDN" xml:space="preserve">
+    <value>Documentos Electrónicos ESAVDOC</value>
+  </data>
+  <data name="lblPagar" xml:space="preserve">
+    <value>Pagar</value>
+  </data>
+  <data name="lblEnviarCorreo" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="lblFecReserva" xml:space="preserve">
+    <value>Fecha de Reserva</value>
+  </data>
+  <data name="lblEstado" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="lblRegDireccion" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="lblRegCodIata" xml:space="preserve">
+    <value>Cód. IATA</value>
+  </data>
+  <data name="lblRegTelefono" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="lblFechaReserva" xml:space="preserve">
+    <value>Reservation Date</value>
+  </data>
+  <data name="lblUsuarioPro" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblDatosPasajero" xml:space="preserve">
+    <value>Datos de Pasajero</value>
+  </data>
+  <data name="lblFechaHoraSalida" xml:space="preserve">
+    <value>Fecha de Salida / Hora</value>
+  </data>
+  <data name="lblFechaHoraArribo" xml:space="preserve">
+    <value>Fecha de Arribo / Hora</value>
+  </data>
+  <data name="lblTransportistaAE" xml:space="preserve">
+    <value>Transportista</value>
+  </data>
+  <data name="lblDuracionAE" xml:space="preserve">
+    <value>Duración</value>
+  </data>
+  <data name="lblFirma" xml:space="preserve">
+    <value>Atentamente</value>
+  </data>
+  <data name="lblCuponeras" xml:space="preserve">
+    <value>Cuponera (s)</value>
+  </data>
+  <data name="lblFechaEmision" xml:space="preserve">
+    <value>Fecha de Emision</value>
+  </data>
+  <data name="lblPasajeros" xml:space="preserve">
+    <value>Pasajeros</value>
+  </data>
+  <data name="lblCuponera" xml:space="preserve">
+    <value>Cuponera</value>
+  </data>
+  <data name="lblDetallePago" xml:space="preserve">
+    <value>Detalle del Pago</value>
+  </data>
+  <data name="lblNumeroVoucher" xml:space="preserve">
+    <value>N° Voucher</value>
+  </data>
+  <data name="lblCupon" xml:space="preserve">
+    <value>Cupon</value>
+  </data>
+  <data name="lblCuponesDisponibles" xml:space="preserve">
+    <value>Cupones Disponibles</value>
+  </data>
+  <data name="lblFechaCompra" xml:space="preserve">
+    <value>Fecha Compra</value>
+  </data>
+  <data name="lblFechaUso" xml:space="preserve">
+    <value>Fecha de Uso</value>
+  </data>
+  <data name="lblFechaVencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="lblProveedor" xml:space="preserve">
+    <value>Proveedor</value>
+  </data>
+  <data name="lblFemenino" xml:space="preserve">
+    <value>Femenino</value>
+  </data>
+  <data name="lblMasculino" xml:space="preserve">
+    <value>Masculino</value>
+  </data>
+  <data name="lblSeleccionar" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="lblDatosCuponera" xml:space="preserve">
+    <value>Datos de la Cuponera</value>
+  </data>
+  <data name="lblPrecioCupon" xml:space="preserve">
+    <value>Precio por Cupon</value>
+  </data>
+  <data name="lblPrecioCuponera" xml:space="preserve">
+    <value>Precio Cuponera</value>
+  </data>
+  <data name="lblDatosPasarela" xml:space="preserve">
+    <value>Datos de la Pasarela</value>
+  </data>
+  <data name="lblPasarela" xml:space="preserve">
+    <value>Pasarela</value>
+  </data>
+  <data name="lblTotalPagar" xml:space="preserve">
+    <value>Total a Pagar</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="lblRegistrarCuenta" xml:space="preserve">
+    <value>Registrar Cuenta</value>
+  </data>
+  <data name="lblDireccionPostal" xml:space="preserve">
+    <value>Direccion Postal</value>
+  </data>
+  <data name="lblEstadoCivil" xml:space="preserve">
+    <value>Estado Civil</value>
+  </data>
+  <data name="lblNumeroHijos" xml:space="preserve">
+    <value>Numero de Hijos</value>
+  </data>
+  <data name="lblCuentaRegistrada" xml:space="preserve">
+    <value>Cuenta registrada</value>
+  </data>
+  <data name="lblGuardar" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="lblEditar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="lblMinimoPassword" xml:space="preserve">
+    <value>6 caracteres como mínimo, con distinción entre mayúsculas y minúsculas</value>
+  </data>
+  <data name="lblPasswordNoIngresado" xml:space="preserve">
+    <value>Contraseña no ingresada</value>
+  </data>
+  <data name="lblUsuarioNoExiste" xml:space="preserve">
+    <value>Usuario no existe.</value>
+  </data>
+  <data name="lblNumeroTransaccion" xml:space="preserve">
+    <value>Numero de Transaccion</value>
+  </data>
+  <data name="lblPagoVirtual" xml:space="preserve">
+    <value>Pago Virtual</value>
+  </data>
+  <data name="lblCuponesExtra" xml:space="preserve">
+    <value>Cupones Extra</value>
+  </data>
+  <data name="lblFiltrar" xml:space="preserve">
+    <value>Filtrar por</value>
+  </data>
+  <data name="lblExisteCuponera" xml:space="preserve">
+    <value>No existen cuponeras agregadas</value>
+  </data>
+  <data name="lblTotalesGenerales" xml:space="preserve">
+    <value>Totales Generales</value>
+  </data>
+  <data name="lblNombres" xml:space="preserve">
+    <value>Nombres</value>
+  </data>
+  <data name="lblNuevo" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="lblPerteneceA" xml:space="preserve">
+    <value>Propietario</value>
+  </data>
+  <data name="lblDatosContacto" xml:space="preserve">
+    <value>Datos del Contacto</value>
+  </data>
+  <data name="lblDatosDocumentoIdentidad" xml:space="preserve">
+    <value>Datos del Documento Identidad</value>
+  </data>
+  <data name="lblMovil" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="lblDatosTarjeta" xml:space="preserve">
+    <value>Datos de la Tarjeta</value>
+  </data>
+  <data name="lblDireccion" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="lblCVV" xml:space="preserve">
+    <value>CVV2/CVC2</value>
+  </data>
+  <data name="lblDatosTarjetaHabiente" xml:space="preserve">
+    <value>Datos TarjetaHabiente</value>
+  </data>
+  <data name="lblFechaExpiracion" xml:space="preserve">
+    <value>Fecha de Expiración</value>
+  </data>
+  <data name="lblNumeroTarjeta" xml:space="preserve">
+    <value>Numero de Tarjeta</value>
+  </data>
+  <data name="lblNacionalidad" xml:space="preserve">
+    <value>Nacionalidad</value>
+  </data>
+  <data name="lblDatosCompra" xml:space="preserve">
+    <value>Datos de la Compra</value>
+  </data>
+  <data name="lblServicioPasarela" xml:space="preserve">
+    <value>Servicios de Pasarela</value>
+  </data>
+  <data name="lblFecha" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="lblHora" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="lblNumeroPedido" xml:space="preserve">
+    <value>Numero de Pedido</value>
+  </data>
+  <data name="lblResultadoCompra" xml:space="preserve">
+    <value>Resultado de Compra</value>
+  </data>
+  <data name="lblTusComprasSeguro" xml:space="preserve">
+    <value>Tus compras con seguridad</value>
+  </data>
+  <data name="lblExisteCupon" xml:space="preserve">
+    <value>No existen cupones agregadas</value>
+  </data>
+  <data name="lblMonedaDestino" xml:space="preserve">
+    <value>Moneda Destino</value>
+  </data>
+  <data name="lblMonedaOrigen" xml:space="preserve">
+    <value>Moneda Origen</value>
+  </data>
+  <data name="lblModificar" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="lblFechaCambio" xml:space="preserve">
+    <value>Fecha de Cambio</value>
+  </data>
+  <data name="lblFechaDesde" xml:space="preserve">
+    <value>Fecha desde</value>
+  </data>
+  <data name="lblFechaHasta" xml:space="preserve">
+    <value>Fecha hasta</value>
+  </data>
+  <data name="lblContinuar" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="lblTrayecto" xml:space="preserve">
+    <value>Trayecto</value>
+  </data>
+  <data name="lblSegNombreAE" xml:space="preserve">
+    <value>2do. Nombre</value>
+  </data>
+  <data name="lblFechaEmisionTitulo" xml:space="preserve">
+    <value>Fecha de &lt;br&gt;Emision</value>
+  </data>
+  <data name="lblNumeroTransaccionTitulo" xml:space="preserve">
+    <value>Numero de &lt;br&gt;Transaccion</value>
+  </data>
+  <data name="lblPrecioCuponTitulo" xml:space="preserve">
+    <value>Precio &lt;br&gt;por Cupon</value>
+  </data>
+  <data name="lblPrecioCuponeraTitulo" xml:space="preserve">
+    <value>Precio&lt;br&gt;Cuponera</value>
+  </data>
+  <data name="lblTotalPagarTitulo" xml:space="preserve">
+    <value>Total a &lt;br&gt;Pagar</value>
+  </data>
+  <data name="lblUsuarioAgencia" xml:space="preserve">
+    <value>Autenticacion de Usuario-Agencia</value>
+  </data>
+  <data name="lblSaldoGoMoney" xml:space="preserve">
+    <value>Saldo GoMoney</value>
+  </data>
+  <data name="lblDatosAgencia" xml:space="preserve">
+    <value>Datos de Agencia</value>
+  </data>
+  <data name="lblDatosGoMoney" xml:space="preserve">
+    <value>Datos GoMoney</value>
+  </data>
+  <data name="lblNumeroCuenta" xml:space="preserve">
+    <value>Numero de Cuenta</value>
+  </data>
+  <data name="lblResumenPago" xml:space="preserve">
+    <value>Resumen de Pago</value>
+  </data>
+  <data name="lblSaldoPostVenta" xml:space="preserve">
+    <value>Saldo Post Venta</value>
+  </data>
+  <data name="lblFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="lblNumeroFiscal" xml:space="preserve">
+    <value>CIF</value>
+  </data>
+  <data name="lblNumeroPasaporte" xml:space="preserve">
+    <value>Nro. de Pasaporte</value>
+  </data>
+  <data name="lblCosto" xml:space="preserve">
+    <value>Costo</value>
+  </data>
+  <data name="lblDiasVigencia" xml:space="preserve">
+    <value>Dias de Vigencia</value>
+  </data>
+  <data name="lblCsieteDias" xml:space="preserve">
+    <value>$280 USD</value>
+  </data>
+  <data name="lblCtresDias" xml:space="preserve">
+    <value>$120 USD</value>
+  </data>
+  <data name="lblCVeinteYunoDias" xml:space="preserve">
+    <value>$840 USD</value>
+  </data>
+  <data name="lblScatorceDias" xml:space="preserve">
+    <value>Elegir</value>
+  </data>
+  <data name="lblcTipoDocumento" xml:space="preserve">
+    <value>Tipo Documento</value>
+  </data>
+  <data name="lbldApellidos" xml:space="preserve">
+    <value>Apellidos</value>
+  </data>
+  <data name="lbldNombres" xml:space="preserve">
+    <value>Nombres</value>
+  </data>
+  <data name="lblnBoleto" xml:space="preserve">
+    <value>Codigo</value>
+  </data>
+  <data name="lblnDiasVigencia" xml:space="preserve">
+    <value>Dias </value>
+  </data>
+  <data name="lblNota" xml:space="preserve">
+    <value>Nota</value>
+  </data>
+  <data name="lblPasaporte" xml:space="preserve">
+    <value>Pasaporte o DNI</value>
+  </data>
+  <data name="lblFechaCreacion" xml:space="preserve">
+    <value>Fecha Compra</value>
+  </data>
+  <data name="LblPrecio" xml:space="preserve">
+    <value>Costo</value>
+  </data>
+  <data name="lblMensaje" xml:space="preserve">
+    <value>ESTE COMPROBANTE SERÁ CANJEADO POR EL CUPÓN MAYA PASS EN LOS MODULOS 
+DE BOLETOTAL, QUE SE ENCUENTRAN EN LOS TERMINALES DE AUTOBUSES AUTORIZADAS DE ADO</value>
+  </data>
+  <data name="lblNroPasaporte" xml:space="preserve">
+    <value>Numero de Pasaporte</value>
+  </data>
+  <data name="lblNumeroDocumento" xml:space="preserve">
+    <value>Numero</value>
+  </data>
+  <data name="lblDatos" xml:space="preserve">
+    <value>Datos de Pasajeros</value>
+  </data>
+  <data name="lblCostoUsd" xml:space="preserve">
+    <value>Costo(USD)</value>
+  </data>
+  <data name="lblGastosEmision" xml:space="preserve">
+    <value>Gastos de Emision(USD)</value>
+  </data>
+  <data name="lblTotalusd" xml:space="preserve">
+    <value>Total (USD)</value>
+  </data>
+  <data name="lblPertenece" xml:space="preserve">
+    <value>Pertenece A</value>
+  </data>
+  <data name="lblPlaya" xml:space="preserve">
+    <value>AV. JUAREZ S/N ESQUINA QUINTA AVENIDA.
+COLONIA CENTRO.
+</value>
+  </data>
+  <data name="lblMexico" xml:space="preserve">
+    <value>CIUDAD DE MEXICO</value>
+  </data>
+  <data name="lblPlayaCarmen" xml:space="preserve">
+    <value>PLAYA DEL CARMEN</value>
+  </data>
+  <data name="lblnDocumento" xml:space="preserve">
+    <value>Numero de Documento</value>
+  </data>
+  <data name="lblReferencia" xml:space="preserve">
+    <value>Clave Maya Pass</value>
+  </data>
+  <data name="lblhorario" xml:space="preserve">
+    <value>LUNES A DOMINGO 8:30 -19:30 HRS.</value>
+  </data>
+  <data name="lblModulo" xml:space="preserve">
+    <value>MODULO TERMINAL TURISTICA</value>
+  </data>
+  <data name="lbldatosAutobusesTapo" xml:space="preserve">
+    <value>CIRCUITO CENTRAL, FRENTE A TAQUILLAS ADO
+IGNACIO ZARAGOZA 200, 10 DE MAYO,
+DELEGACION VENUSTIANO CARRANZA
+</value>
+  </data>
+  <data name="lblDatosCancun" xml:space="preserve">
+    <value>CALLE PINO, SUPER MANZANA 23. ESQUINA AV. TULUM Y AV. UXMAL. CENTRO, CANCUN. QUINTANA ROO, MEXICO
+</value>
+  </data>
+  <data name="lblnReferencia" xml:space="preserve">
+    <value>REFERENCIA</value>
+  </data>
+  <data name="lblPoliticas" xml:space="preserve">
+    <value>CONSULTE POLITICAS DE VIAJE Y EQUIPAJE</value>
+  </data>
+  <data name="lbldNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblSala" xml:space="preserve">
+    <value>MODULO SALA PRIMERA</value>
+  </data>
+  <data name="lblRecuperar" xml:space="preserve">
+    <value>Opción de recuperar reservas solo para usuarios registrados</value>
+  </data>
+  <data name="lblventaRestringida" xml:space="preserve">
+    <value> ESTA RESTRINGIDA LA VENTA A CIUDADANOS MEXICANOS</value>
+  </data>
+  <data name="lblHoraCentralTapo" xml:space="preserve">
+    <value>LUNES A DOMINGO 9:00-21:00 HRS.</value>
+  </data>
+  <data name="lblHoraTerminalCancun" xml:space="preserve">
+    <value>LUNES A DOMINGO  07:30 A 21:30</value>
+  </data>
+  <data name="lblNroFiscal" xml:space="preserve">
+    <value>Número Fiscal</value>
+  </data>
+  <data name="lblPersonaContacto" xml:space="preserve">
+    <value>Persona de Contacto</value>
+  </data>
+  <data name="lblRegistarCuentaAgencia" xml:space="preserve">
+    <value>Registrar Cuenta Agencia</value>
+  </data>
+  <data name="lnkRegistroAgencia" xml:space="preserve">
+    <value>Crear Registro Agencia</value>
+  </data>
+  <data name="lblCuentaAgencia" xml:space="preserve">
+    <value>Registered Agency</value>
+  </data>
+  <data name="lblcontrasena" xml:space="preserve">
+    <value>Contraseña :</value>
+  </data>
+  <data name="lblCuerpoCambio" xml:space="preserve">
+    <value>Para cambiar su contraseña, haga click en el enlace que 
+aparece a continuación</value>
+  </data>
+  <data name="lblCuerpoUrlCambio" xml:space="preserve">
+    <value>Si no se puede acceder a la página, copie la URL y péguela en una 
+ventana nueva del navegador.</value>
+  </data>
+  <data name="lblCuerpoUsuario" xml:space="preserve">
+    <value>Su usuario y contraseña han sido creados correctamente</value>
+  </data>
+  <data name="lblNombreUsuario" xml:space="preserve">
+    <value>Nombre de Usuario :</value>
+  </data>
+  <data name="lblCorreoInformacion" xml:space="preserve">
+    <value>informacion@allmexicopass.com</value>
+  </data>
+  <data name="lblEstAgencia" xml:space="preserve">
+    <value>Estimada Agencia</value>
+  </data>
+  <data name="lblgracias" xml:space="preserve">
+    <value>Gracias por haberse registrado en nuestro portal
+http://www.allmexicopass.com en donde podrá navegar y 
+reservar en linea el producto que usted elija.</value>
+  </data>
+  <data name="lblproporciona" xml:space="preserve">
+    <value>le proporciona un canal rápido y seguro de 
+reservación</value>
+  </data>
+  <data name="lblReservaAdmin" xml:space="preserve">
+    <value>Reservas &amp; Administración</value>
+  </data>
+  <data name="lblGoMoney" xml:space="preserve">
+    <value>GOGDN Money</value>
+  </data>
+  <data name="lblSaldoActual" xml:space="preserve">
+    <value>Saldo Actual</value>
+  </data>
+  <data name="lblSaldoInicial" xml:space="preserve">
+    <value>Saldo Inicial</value>
+  </data>
+  <data name="lblTotalDebito" xml:space="preserve">
+    <value>Total Debito</value>
+  </data>
+  <data name="lblCredito" xml:space="preserve">
+    <value>Crédito</value>
+  </data>
+  <data name="lblDebito" xml:space="preserve">
+    <value>Débito</value>
+  </data>
+  <data name="lblDescripcion" xml:space="preserve">
+    <value>Descripcion</value>
+  </data>
+  <data name="lblFechaIngreso" xml:space="preserve">
+    <value>Fecha de Ingreso</value>
+  </data>
+  <data name="lblGoGDNMoneyMovimiento" xml:space="preserve">
+    <value>Movimiento GOGDN Money</value>
+  </data>
+  <data name="lblNroOrden" xml:space="preserve">
+    <value>N° Orden</value>
+  </data>
+  <data name="lblOperacion" xml:space="preserve">
+    <value>Operación</value>
+  </data>
+  <data name="lblUsuarioDestino" xml:space="preserve">
+    <value>Usuario Destino</value>
+  </data>
+  <data name="lblUsuarioExportar" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="lblUsuarioOrigen" xml:space="preserve">
+    <value>Usuario Origen</value>
+  </data>
+  <data name="lblVer" xml:space="preserve">
+    <value>Ver</value>
+  </data>
+  <data name="lblSaldoGoGDNmoney" xml:space="preserve">
+    <value>Saldo GOGDN Money</value>
+  </data>
+  <data name="lblCuentaGoMoney" xml:space="preserve">
+    <value>Cuenta GOGDN Money</value>
+  </data>
+  <data name="lblDatosRecarga" xml:space="preserve">
+    <value>Datos de Recarga Virtual</value>
+  </data>
+  <data name="lblMensajeObligatorio" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCuenta" xml:space="preserve">
+    <value>Cuenta</value>
+  </data>
+  <data name="lblCuentaDestino" xml:space="preserve">
+    <value>Cuenta Destino</value>
+  </data>
+  <data name="lblFechaProceso" xml:space="preserve">
+    <value>Fecha Proceso</value>
+  </data>
+  <data name="lblCuentaOrigen" xml:space="preserve">
+    <value>Cuenta Origen</value>
+  </data>
+  <data name="lblSaldoAntes" xml:space="preserve">
+    <value>Saldo antes de {0}</value>
+  </data>
+  <data name="lblSaldoDespues" xml:space="preserve">
+    <value>Saldo despues de(la) {0}</value>
+  </data>
+  <data name="lblDatosUsuario" xml:space="preserve">
+    <value>Datos de Usuario</value>
+  </data>
+  <data name="lblServicio" xml:space="preserve">
+    <value>Servicio</value>
+  </data>
+  <data name="lblCuponesXPass" xml:space="preserve">
+    <value>CUPONES POR  &lt;br&gt; PASAJERO</value>
+  </data>
+  <data name="lblHabitacion" xml:space="preserve">
+    <value>Habitación</value>
+  </data>
+  <data name="lblEdadNinoHab" xml:space="preserve">
+    <value>Edad de los niños</value>
+  </data>
+  <data name="lblEntrada" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
+  <data name="lblHabitacion_izq" xml:space="preserve">
+    <value>{0} Habitación</value>
+  </data>
+  <data name="lblHabitacion_der" xml:space="preserve">
+    <value>Habitación {0}</value>
+  </data>
+  <data name="lblEdadNinoHabAbr" xml:space="preserve">
+    <value>Edades</value>
+  </data>
+  <data name="lblOcupacion" xml:space="preserve">
+    <value>Ocupación</value>
+  </data>
+  <data name="lblSobreBusqueda" xml:space="preserve">
+    <value>Sobre la búsqueda</value>
+  </data>
+  <data name="lblPrecioDesdeHasta" xml:space="preserve">
+    <value>Precios desde/hasta</value>
+  </data>
+  <data name="lblEstrellas" xml:space="preserve">
+    <value>Categoría</value>
+  </data>
+  <data name="lblRegistroVacioHotel" xml:space="preserve">
+    <value>No existe informacion de hoteles</value>
+  </data>
+  <data name="lblUbicacion" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="lblDetalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="lblPrecioNoche" xml:space="preserve">
+    <value>Tarifa&amp;nbsp;Promedio&amp;nbsp;x&amp;nbsp;Noche</value>
+  </data>
+  <data name="lblEdificio" xml:space="preserve">
+    <value>Edificio</value>
+  </data>
+  <data name="lblUbica" xml:space="preserve">
+    <value>Ubicación / Distancia</value>
+  </data>
+  <data name="lblDista" xml:space="preserve">
+    <value>Distancia</value>
+  </data>
+  <data name="lblTpublico" xml:space="preserve">
+    <value>T.Público</value>
+  </data>
+  <data name="lblMapa" xml:space="preserve">
+    <value>Mapa de ubicación</value>
+  </data>
+  <data name="lblFotos" xml:space="preserve">
+    <value>Fotos</value>
+  </data>
+  <data name="lblReserva" xml:space="preserve">
+    <value>Reserva</value>
+  </data>
+  <data name="lblHotel" xml:space="preserve">
+    <value>Hotel</value>
+  </data>
+  <data name="lblFechaLlegada" xml:space="preserve">
+    <value>Fecha de Llegada</value>
+  </data>
+  <data name="lblNroNoches" xml:space="preserve">
+    <value>Número de Noches</value>
+  </data>
+  <data name="lblNroCuartos" xml:space="preserve">
+    <value>Número de Habitaciones</value>
+  </data>
+  <data name="lblPrecioTotal" xml:space="preserve">
+    <value>Precio Total</value>
+  </data>
+  <data name="lblHuespedResponsable" xml:space="preserve">
+    <value>Datos sólo del huésped responsable de la reserva</value>
+  </data>
+  <data name="lblHuespedes" xml:space="preserve">
+    <value>Datos de todos los huéspedes</value>
+  </data>
+  <data name="lblFormaPago" xml:space="preserve">
+    <value>Forma de Pago</value>
+  </data>
+  <data name="lblEdad" xml:space="preserve">
+    <value>Edad</value>
+  </data>
+  <data name="lblPrepVoucher" xml:space="preserve">
+    <value>Prepaid Voucher</value>
+  </data>
+  <data name="lblRegimenAlojamiento" xml:space="preserve">
+    <value>Regimen de Alojamiento</value>
+  </data>
+  <data name="lblReservadoPagado" xml:space="preserve">
+    <value>Reservado y pagadero por</value>
+  </data>
+  <data name="lblRemarks" xml:space="preserve">
+    <value>OBSERVACIONES</value>
+  </data>
+  <data name="lblReferenciaProveedor" xml:space="preserve">
+    <value>Referencia Proveedor</value>
+  </data>
+  <data name="lblDetalleTarifa" xml:space="preserve">
+    <value>Observaciones</value>
+  </data>
+  <data name="lblParaReservarDesplegar" xml:space="preserve">
+    <value>Para RESERVAR desplegar</value>
+  </data>
+  <data name="lblSeleccionAsiento" xml:space="preserve">
+    <value>Selección de asiento(s)</value>
+  </data>
+  <data name="lblDocumentos" xml:space="preserve">
+    <value>Emisiones</value>
+  </data>
+  <data name="lblFactura" xml:space="preserve">
+    <value>Factura</value>
+  </data>
+  <data name="lblMantenimientos" xml:space="preserve">
+    <value>Mantenimientos</value>
+  </data>
+  <data name="lblMantenimientosAgencia" xml:space="preserve">
+    <value>Agencias</value>
+  </data>
+  <data name="lblNotaCredito" xml:space="preserve">
+    <value>Nota de Credito</value>
+  </data>
+  <data name="lblNotaDebito" xml:space="preserve">
+    <value>Nota de Debito</value>
+  </data>
+  <data name="lblRepCompra" xml:space="preserve">
+    <value>Compras</value>
+  </data>
+  <data name="lblReportes" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="lblRepVenta" xml:space="preserve">
+    <value>Ventas</value>
+  </data>
+  <data name="lblUsuarios" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="mAdministracion" xml:space="preserve">
+    <value>ADMINISTRACIÒN</value>
+  </data>
+  <data name="lblAccesoUsuarios" xml:space="preserve">
+    <value>Acceso a Usuarios</value>
+  </data>
+  <data name="lblAerolineas" xml:space="preserve">
+    <value>Aerolineas</value>
+  </data>
+  <data name="lblBienvenido" xml:space="preserve">
+    <value>Bienvenido</value>
+  </data>
+  <data name="lblBoleta" xml:space="preserve">
+    <value>Boleta de Venta</value>
+  </data>
+  <data name="lblIngresar" xml:space="preserve">
+    <value>Ingresar</value>
+  </data>
+  <data name="lblProveedores" xml:space="preserve">
+    <value>Clientes y Proveedores</value>
+  </data>
+  <data name="lblRango" xml:space="preserve">
+    <value>Rango de Documentos</value>
+  </data>
+  <data name="lblTerceros" xml:space="preserve">
+    <value>Terceros</value>
+  </data>
+  <data name="lblBuscarPor" xml:space="preserve">
+    <value>Buscar Por:</value>
+  </data>
+  <data name="lblTipo" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="lblActivo" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="lblInactivo" xml:space="preserve">
+    <value>Inactivo</value>
+  </data>
+  <data name="lblCodigoEmisor" xml:space="preserve">
+    <value>Emisor</value>
+  </data>
+  <data name="lblRazonSocial" xml:space="preserve">
+    <value>Razón Social</value>
+  </data>
+  <data name="lblRuc" xml:space="preserve">
+    <value>Ruc</value>
+  </data>
+  <data name="lblSucursal" xml:space="preserve">
+    <value>Sucursal</value>
+  </data>
+  <data name="lblEliminar" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="lblLoading" xml:space="preserve">
+    <value>Cargando</value>
+  </data>
+  <data name="lblCliente" xml:space="preserve">
+    <value>Razón Social :</value>
+  </data>
+  <data name="lblSelecionar" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="lblSeguir" xml:space="preserve">
+    <value>Seguir</value>
+  </data>
+  <data name="lblItemCliente" xml:space="preserve">
+    <value>Agregar Item</value>
+  </data>
+  <data name="lblNroFinal" xml:space="preserve">
+    <value>Número Final</value>
+  </data>
+  <data name="lblNroInicial" xml:space="preserve">
+    <value>Número Inicial</value>
+  </data>
+  <data name="lblSerie" xml:space="preserve">
+    <value>Serie</value>
+  </data>
+  <data name="lblTipoDocumento" xml:space="preserve">
+    <value>Tipo de Documento</value>
+  </data>
+  <data name="lblDocRelacionados" xml:space="preserve">
+    <value>Documentos Relacionados con la Factura</value>
+  </data>
+  <data name="lblInformacionFactura" xml:space="preserve">
+    <value>Información Relacionada a la Factura</value>
+  </data>
+  <data name="lblFacturaElectronica" xml:space="preserve">
+    <value>FACTURA ELECTRONICA</value>
+  </data>
+  <data name="lblItemBoleta" xml:space="preserve">
+    <value>Agregar Item Boleta</value>
+  </data>
+  <data name="lblEmisorDocumento" xml:space="preserve">
+    <value>EMISOR DE DOCUMENTOS</value>
+  </data>
+  <data name="lblInicio" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="lblSucursales" xml:space="preserve">
+    <value>Sucursales</value>
+  </data>
+  <data name="lblCodAgencia" xml:space="preserve">
+    <value>Nro Agencia</value>
+  </data>
+  <data name="lblCodigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="lblIa0001" xml:space="preserve">
+    <value>IA0001</value>
+  </data>
+  <data name="lblContacto" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="lblDenominacion" xml:space="preserve">
+    <value>Denominación</value>
+  </data>
+  <data name="lblAgregarRango" xml:space="preserve">
+    <value>Agregar Rango</value>
+  </data>
+  <data name="lblVerRango" xml:space="preserve">
+    <value>Ver Rango</value>
+  </data>
+  <data name="lblRangoFinal" xml:space="preserve">
+    <value>R. Final</value>
+  </data>
+  <data name="lblRangoInicial" xml:space="preserve">
+    <value>R. Inicial</value>
+  </data>
+  <data name="lblNumero" xml:space="preserve">
+    <value>Nro Documento</value>
+  </data>
+  <data name="lblNroDocumento" xml:space="preserve">
+    <value>Nro Documento</value>
+  </data>
+  <data name="lblImporteTotal" xml:space="preserve">
+    <value>Importe</value>
+  </data>
+  <data name="lblImprimir" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="lblDescargar" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="lblEmailContacto" xml:space="preserve">
+    <value>Email Contacto</value>
+  </data>
+  <data name="lblGenerarConcar" xml:space="preserve">
+    <value>Generar Concar</value>
+  </data>
+  <data name="lblCodigoCliente" xml:space="preserve">
+    <value>Codigo Cliente</value>
+  </data>
+  <data name="lblTipoDocRef" xml:space="preserve">
+    <value>Tipo Doc. Ref.</value>
+  </data>
+  <data name="lblTotalIgv" xml:space="preserve">
+    <value>IGV</value>
+  </data>
+  <data name="lblTotalOtros" xml:space="preserve">
+    <value>Otros</value>
+  </data>
+  <data name="lblValorVenta" xml:space="preserve">
+    <value>Valor Venta</value>
+  </data>
+  <data name="lblNroDocRef" xml:space="preserve">
+    <value>Nro. Doc. Ref</value>
+  </data>
+  <data name="lblTipoCambio" xml:space="preserve">
+    <value>Tipo Cambio</value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="lblEnviarNota" xml:space="preserve">
+    <value>Enviar Nota</value>
+  </data>
+  <data name="lblPagarTC" xml:space="preserve">
+    <value>Pagar con TC</value>
+  </data>
+  <data name="lblVerPdf" xml:space="preserve">
+    <value>Ver PDF</value>
+  </data>
+  <data name="lblVerXml" xml:space="preserve">
+    <value>Ver XML</value>
+  </data>
+  <data name="lblDescuento" xml:space="preserve">
+    <value>Descuento</value>
+  </data>
+  <data name="lblIgv" xml:space="preserve">
+    <value>I.G.V</value>
+  </data>
+  <data name="lblOtrosCargos" xml:space="preserve">
+    <value>Otros Cargos</value>
+  </data>
+  <data name="lblOtrosTributos" xml:space="preserve">
+    <value>Otros Tributos</value>
+  </data>
+  <data name="lblValorUnitario" xml:space="preserve">
+    <value>Valor Unitario</value>
+  </data>
+  <data name="lblCantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="lblContrato" xml:space="preserve">
+    <value>Contrato</value>
+  </data>
+  <data name="lblDocCobranza" xml:space="preserve">
+    <value>Documento de Cobranza</value>
+  </data>
+  <data name="lblEstado1" xml:space="preserve">
+    <value>Estado 1</value>
+  </data>
+  <data name="lblEstado2" xml:space="preserve">
+    <value>Estado 2</value>
+  </data>
+  <data name="lblEstado3" xml:space="preserve">
+    <value>Estado 3</value>
+  </data>
+  <data name="lblNombreAgencia" xml:space="preserve">
+    <value>Nombre Agencia</value>
+  </data>
+  <data name="lblRucAgencia" xml:space="preserve">
+    <value>Ruc Agencia</value>
+  </data>
+  <data name="lblSubirHot" xml:space="preserve">
+    <value>Subir Archivo Hot</value>
+  </data>
+  <data name="lblComunicacionBaja" xml:space="preserve">
+    <value>Comunicación de Baja</value>
+  </data>
+  <data name="lblResumenDocumento" xml:space="preserve">
+    <value>Resumen Diario</value>
+  </data>
+  <data name="lblMonto" xml:space="preserve">
+    <value>Monto</value>
+  </data>
+  <data name="lblBaseDocReferencia" xml:space="preserve">
+    <value>BASE DOCUMENTO DE REFERENCIA</value>
+  </data>
+  <data name="lblCodCentroCosto" xml:space="preserve">
+    <value>CODIGO CENTRO COSTO</value>
+  </data>
+  <data name="lblCodigoAnexo" xml:space="preserve">
+    <value>CODIGO DE ANEXO</value>
+  </data>
+  <data name="lblCodigoArea" xml:space="preserve">
+    <value>CÓDIGO DE ÁREA</value>
+  </data>
+  <data name="lblCodigoAuxiliar" xml:space="preserve">
+    <value>CÓDIGO AUXILIAR</value>
+  </data>
+  <data name="lblDebeHab" xml:space="preserve">
+    <value>DEBE/HABER</value>
+  </data>
+  <data name="lblFechaDocReferencia" xml:space="preserve">
+    <value>FECHA DOCUMENTO DE REFERENCIA</value>
+  </data>
+  <data name="lblFechaDocumento" xml:space="preserve">
+    <value>FECHA DOCUMENTO</value>
+  </data>
+  <data name="lblFechaOperacion" xml:space="preserve">
+    <value>FECHA DE OPERACIÓN</value>
+  </data>
+  <data name="lblFechaTipoCambio" xml:space="preserve">
+    <value>FECHA TIPO CAMBIO</value>
+  </data>
+  <data name="lblFlagConversion" xml:space="preserve">
+    <value>FLAG DE CONVERSIÓN</value>
+  </data>
+  <data name="lblGlosa" xml:space="preserve">
+    <value>GLOSA</value>
+  </data>
+  <data name="lblIgvProvicion" xml:space="preserve">
+    <value>IGV DOCUMENTO PROVISIÓN</value>
+  </data>
+  <data name="lblImporteDetraccionSol" xml:space="preserve">
+    <value>IMPORTE DETRACCION SOLES</value>
+  </data>
+  <data name="lblImporteDetraccionUsd" xml:space="preserve">
+    <value>IMPORTE DETRACCION USD</value>
+  </data>
+  <data name="lblImporteDolares" xml:space="preserve">
+    <value>IMPORTE DOLARES</value>
+  </data>
+  <data name="lblImporteOriginal" xml:space="preserve">
+    <value>IMPORTE ORIGINAL</value>
+  </data>
+  <data name="lblImporteSoles" xml:space="preserve">
+    <value>IMPORTE SOLES</value>
+  </data>
+  <data name="lblMedioPago" xml:space="preserve">
+    <value>MEDIO DE PAGO</value>
+  </data>
+  <data name="lblNroComprobante" xml:space="preserve">
+    <value>NUMERO DE COMROBANTE</value>
+  </data>
+  <data name="lblNroDocReferencia" xml:space="preserve">
+    <value>NÚMERO DE DOCUMENTO DE REFERENCIA</value>
+  </data>
+  <data name="lblNroSerieCajaRegistra" xml:space="preserve">
+    <value>NÚMERO DE SERIE DE CAJA REGISTRADORA</value>
+  </data>
+  <data name="lblPeriodo" xml:space="preserve">
+    <value>PERIODO</value>
+  </data>
+  <data name="lblSubdiario" xml:space="preserve">
+    <value>SUBDIARIO</value>
+  </data>
+  <data name="lblTasaDetraccion" xml:space="preserve">
+    <value>TASA DETRACCIÓN/PERCEPCIÓN</value>
+  </data>
+  <data name="lblTipoConversion" xml:space="preserve">
+    <value>TIPO DE CONVERSIÓN</value>
+  </data>
+  <data name="lblTipoCuenta" xml:space="preserve">
+    <value>TIPO DE CUENTA</value>
+  </data>
+  <data name="lblTipoDetAsa" xml:space="preserve">
+    <value>TIPO DE TASA</value>
+  </data>
+  <data name="lblTipoDocReferencia" xml:space="preserve">
+    <value>TIPO DE DOCUMENTO DE REFERENCIA</value>
+  </data>
+  <data name="lblTipoRefMQ" xml:space="preserve">
+    <value>TIPO DE REFERENCIA EN ESTADO MQ</value>
+  </data>
+  <data name="lblTotalimportedolares" xml:space="preserve">
+    <value>Importe en $</value>
+  </data>
+  <data name="lblTotalimportesoles" xml:space="preserve">
+    <value>Importe en S/.</value>
+  </data>
+  <data name="lblTotalisc" xml:space="preserve">
+    <value>isc</value>
+  </data>
+  <data name="lblTotaltotalotrostributos" xml:space="preserve">
+    <value>Otros Tributos</value>
+  </data>
+  <data name="lblBoletaapi" xml:space="preserve">
+    <value>Total Boletas</value>
+  </data>
+  <data name="lblBoletasAceptadas" xml:space="preserve">
+    <value>BO. Correctas</value>
+  </data>
+  <data name="lblBoletasaltos" xml:space="preserve">
+    <value>BO. Saltos</value>
+  </data>
+  <data name="lblBoletassRechazadas" xml:space="preserve">
+    <value>BO. Rechazadas</value>
+  </data>
+  <data name="lblFacturasAceptadas" xml:space="preserve">
+    <value>FA. Correctas</value>
+  </data>
+  <data name="lblFacturasRechazadas" xml:space="preserve">
+    <value>FA. Rechazadas</value>
+  </data>
+  <data name="lblFacturassaltos" xml:space="preserve">
+    <value>FA. Saltos</value>
+  </data>
+  <data name="lblnombrearchivo" xml:space="preserve">
+    <value>Nombre del Archivo</value>
+  </data>
+  <data name="lblCodError" xml:space="preserve">
+    <value>Codigo Error</value>
+  </data>
+</root>

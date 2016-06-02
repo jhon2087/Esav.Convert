@@ -1,0 +1,60 @@
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+	
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+				
+	
+	
+	.form-bg {
+		width: 396px;
+		height: 519px;
+		
+		margin: 100px auto 0; /*el margen*/
+		
+}
+
+	.form-bg form {
+		width: 400px;
+		height: 360px;
+		background:  url(images/login_form.png);
+    margin-top: 42px;
+}
+	
+
+	
+	.imputPass{
+		
+		width: 372px;
+		height: 50px;
+        background: url(images/pass.png);
+	
+		
+	}
+	
+	.imputUser{
+		
+		width: 372px;
+		height: 50px;
+        background: url(images/usuario.png);
+		
+		
+	}
+	
+	.aspButton{background-image: url(Imagenes/boton.png);vertical-align:middle; height:27px; border : none; min-width:95px; background-repeat: no-repeat; color :White;cursor: pointer; text-transform:uppercase; font-weight: normal; font-family:sans-serif; font-size:14px;}
+
+.aspButtonSearch{background-image: url(Imagenes/boton.png);vertical-align:middle; height:27px; border : none; min-width:95px; background-repeat: no-repeat; color :White;cursor: pointer; text-transform:uppercase; font-weight: normal; font-family:sans-serif; font-size:14px;}
+
+.btnBus{background-image: url(Imagenes/btnBusOn.png); display:block; width:114px; height:100px; text-decoration: none; cursor: pointer;}
+.btnBus:hover {background-image: url(Imagenes/btnBusOff.png);}
+
+.btnAe{background-image: url(Imagenes/btnAeOn.png); display:block; width:114px; height:100px; text-decoration: none; cursor: pointer;}
+.btnAe:hover {background-image: url(Imagenes/btnAeOff.png);}

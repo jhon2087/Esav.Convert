@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeFile="MainConvert.master.cs" Inherits="FormDocuments_MainConvert" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+   
+    <script src="../../gogdn/library/js/lastmenu.js" type="text/javascript"></script>
+     <asp:ContentPlaceHolder ID="cuHead" runat="server">
+         
+        
+    </asp:ContentPlaceHolder>
+    <script src="../../gogdn/library/js/global.js" type="text/javascript"></script>
+         <script src="../../gogdn/library/jquery/jquery-1.5.min.js" type="text/javascript"></script>
+         <link rel="stylesheet" type="text/css" href="../../css/stylesy.css">
+         <link href="../../css/custom.css" rel="stylesheet" type="text/css">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../../fonts/css/font-awesome.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        .style3
+        {
+            width: 201px;
+        }
+    </style>
+    <link href="../../gogdn/library/css/jquery-ui-1.8rc3.custom.css" rel="stylesheet" type="text/css" />
+   
+   
+    <style type="text/css">
+        .ui-datepicker-trigger
+        {
+            margin-left: 5px;
+            margin-top: -1px;
+            vertical-align: middle;
+        }
+        #dvGrilla
+        {
+            font-size: small;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cpMainBody" Runat="Server">
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-top" style="position: relative;border: crimson;top: 0px;width: 103%;margin-left: -16px;background-color: transparent;">
+                <div class="container-fluid">
+                    
+                            <div id='cssmen'>
+                                   
+                                        <ul>
+                                           <li class="has-sub"><a href='../../../Esav.Convert/FormDocuments/Comun/FrmInicio.aspx'><span>Inicio</span></a></li>
+                                           <li class='has-sub'><a href='#'><span>
+                            <asp:Literal runat="server" ID="Literal4" Text="Procesar Archivos"></asp:Literal></span></a>
+                                           
+                                              <ul>
+                                                        <li><a class="Linked" href="InterfaceContable/FrmSubirArchivoHot.aspx" runat="server" id="A3">
+                                                <span>
+                                                <asp:Literal runat="server" ID="Literal5" Text="<%$Resources:label, lblSubirHot %>"></asp:Literal>
+                                                </span></a></li>
+                                                  <li><a class="Linked" href="Comun/FrmListaTipoCambio.aspx" runat="server" id="A4">
+                                        <span>
+                                        <asp:Literal runat="server" ID="Literal6" Text="<%$Resources:label, lblTipoCambio %>"></asp:Literal>
+                                        </span></a></li>
+                                              </ul>
+                                           </li>
+                                           <li class='has-sub'><a href='#'><span>
+                                                <asp:Literal ID="Literal3" runat="server" Text="Interface Contable"></asp:Literal>
+                                                </span></a>
+                       
+                                            <ul>
+                            
+                                                     <li >
+                                                    <a class="Linked" href="InterfaceContable/FrmDocElectronico.aspx" runat="server"
+                                                        id="A5"><span>
+                                                    <asp:Literal ID="Literal7" runat="server" Text="Documentos Electrónicos"></asp:Literal>
+                                                    </span></a></li>
+                                                   <%--  <li >
+                                                    <a class="Linked" href="InterfaceContable/FrmDocElectronico2.aspx" runat="server"
+                                                        id="A7"><span>
+                                                    <asp:Literal ID="Literal1" runat="server" Text="Documentos Electrónicos Formato Concar"></asp:Literal>
+                                                    </span></a></li>--%>
+                                                     <li >
+                                                    <a class="Linked" href="InterfaceContable/FrmEspecializado.aspx" runat="server"
+                                                        id="A6"><span>
+                                                    <asp:Literal ID="Literal8" runat="server" Text="Especializados"></asp:Literal>
+                                                    </span></a></li>
+                                            </ul>
+                                          </li>
+                                      <li class='has-sub'><a href='#'><span>
+                                        <asp:Literal runat="server" ID="Literal28" Text="Consultar Documentos"></asp:Literal>
+                                        </span></a>
+                                        <ul>
+                                            <li><a class="Linked" href="ConsultaDocumentos/FrmDocumentosEmitidos.aspx" runat="server" id="A1"><span>
+                                                <asp:Literal runat="server" ID="Literal64" Text="Documentos Emitidos"></asp:Literal>
+                                                </span></a></li>
+
+                                                <li><a class="Linked" href="ConsultaDocumentos/FrmDocumentoCobranza.aspx" runat="server" id="A7"><span>
+                                                <asp:Literal runat="server" ID="Literal9" Text="Documentos de Cobranza"></asp:Literal>
+                                                </span></a></li>
+
+                                            <li><a class="Linked" href="ConsultaDocumentos/FrmRechazosSunat.aspx" runat="server" id="A2"><span>
+                                            <asp:Literal runat="server" ID="Literal1" Text="Documentos Rechazados Sunat"></asp:Literal>
+                                            </span></a></li>
+                                           <%-- <li><a class="Linked" href="Comun/FrmInicio.aspx" runat="server" id="A2">
+                                                <span>
+                                                <asp:Literal runat="server" ID="Literal45" Text="<%$Resources:label, lblRepCompra %>"></asp:Literal>
+                                                </span></a></li>--%>
+                                        </ul>
+                                    </li>
+                                           <li class='has-sub'><a href='#'><span>
+                            <asp:Literal runat="server" ID="Literal112" Text="<%$Resources:label, lblReportes %>"></asp:Literal>
+                            </span></a>
+                            <ul>
+                                <li><a class="Linked" href="Reportes/FrmReporteVentas.aspx" runat="server" id="A8"><span>
+                                    <asp:Literal runat="server" ID="Literal102" Text="<%$Resources:label, lblRepVenta %>"></asp:Literal>
+                                    </span></a></li>
+                               
+                                <li><a class="Linked" href="Comun/FrmInicio.aspx" runat="server" id="A9">
+                                    <span>
+                                    <asp:Literal runat="server" ID="Literal137" Text="<%$Resources:label, lblRepCompra %>"></asp:Literal>
+                                    </span></a></li>
+                                    
+                                                                      
+                               <li><a class="Linked" href="Reportes/FrmComunicacionBaja.aspx" runat="server"
+                                    id="A18"><span>
+                                <asp:Literal ID="Literal21" runat="server" Text="<%$Resources:label, lblComunicacionBaja %>"></asp:Literal>
+                                </span></a></li>
+                            
+                                <li> <a class="Linked" href="InterfaceContable/FrmSubirClientesRuc.aspx" runat="server"
+                                    id="A199"><span>
+                                <asp:Literal ID="Literal25" runat="server" Text="Subir Clientes Sunat"></asp:Literal>
+                                </span></a></li>
+                                <li><a class="Linked" href="Reportes/FrmReporteApiValidador.aspx" runat="server" id="A10"><span>
+                                    <asp:Literal runat="server" ID="Literal2" Text="Reporte Api Validador"></asp:Literal>
+                                    </span></a></li>
+                               
+                              </ul>
+                       </li>
+                                           
+                                        </ul>
+                                         
+                                                   
+                            </div>
+                </div>
+            </nav>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="box-shadow: -1px -1px 19px 2px rgb(51, 51, 51);">
+        <tr id="tr1" runat="server">
+       
+       
+            <td valign="top" style="background-color: white;">
+                <asp:ContentPlaceHolder ID="cpCuponeraBody" runat="server" Visible="true">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+
+</asp:Content>
+

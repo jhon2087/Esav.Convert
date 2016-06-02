@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+      
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+
+    #redestop{
+	    width:105px;
+	    position: absolute;	     
+	    margin-top:-10px;
+    }
+    
+    #redestop ul{
+    	list-style:none
+    }
+    
+    #redestop ul li{
+	    width:25px;
+	    padding:0 5px;
+	    float:left;
+    }
+
+    .footer2_{
+	    font-family: Tahoma, Geneva, sans-serif;
+	    font-size: 12px;
+	    color: #666;
+    }
+
+        #lnkLogout
+        {
+        }
+        .style3
+        {
+            width: 55px;
+        }
+
+        .style4
+        {
+            width: 226px;
+        }
+
+        .style5
+        {
+            width: 407px;
+        }
+
+    </style>    
+      </head>
+<body   class="bodyinterior"   >
+
+  
+<div class="centrarweb" >
+
+    <form id="form1" runat="server">  
+      
+        <div><!--id="mainwrapper" -->
+            <table width="1100px" border="0" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td valign="top" style="background-color: white;">                                      
+                   <div id="header" style="height: 100px;">
+                      <table cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+                        <tr>
+                            <td width="60%">                                
+                                <div class="tituloPagina" style="width:100%;box-shadow: -1px -1px 19px 2px rgb(51, 51, 51);">
+                            
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" 
+                                        style="height: 102px">
+                                        <tr>
+                                            <td class="style3">
+                                                &nbsp;&nbsp;&nbsp;
+                                            </td>
+                                            <td class="style4" align="right">
+                                               
+                                            </td>
+                                            <td width="25%">
+                                             <asp:Image ID="Image1" runat="server" style="height: 93px;" />
+                                                    <table cellspacing="0" cellpadding="0" border="0" style="width: 325px">
+                                                        <tr>
+                                                            <td class="style5" align="right" >
+                                                               
+                                                              
+                                                                  <asp:Button ID="lnkLogout" runat="server" class="btn btn-danger" style="position: absolute;z-index: 2334;margin-left: 33px;margin-top: 17px;" 
+                                                                    onclick="lnkLogout_Click" 
+                                                                    Text="Cerrar Sesión"  />
+                                                         
+                                                               <asp:HyperLink CssClass="Linked"  style="visibility: hidden;"  runat="server" ID="lnkAdministracion" NavigateUrl="FormDocuments/Comun/FrmInicio.aspx" Text="<%$ Resources: label, mAdministracion %>"></asp:HyperLink>
+                                                             
+                                                              <asp:Label ID="lblUsuario" runat="server" style="visibility: hidden;" Text=""></asp:Label>&nbsp;&nbsp;
+                                                        
+                                                               <asp:Label ID="lblNombreUser" style="visibility: hidden;"  runat="server" Text=""></asp:Label>&nbsp;&nbsp;
+                                                              
+                                                            </td>    
+                                                                                  
+                                                        </tr>
+                                                                                                               
+                                                    </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            
+                            </td>
+                        </tr>
+                        <tr style="display:table-row">
+                          <td valign="top">
+                                                    
+                            </td>
+                        </tr>   
+                        </table>
+                    </div>
+                </td>
+            </tr>        
+            <tr>
+                <td valign="top">
+                    <table cellspacing="0" border="0" cellpadding="0" width="100%"><!--id="content" -->
+                    <tr>
+                        <td valign="top">
+                            <asp:ContentPlaceHolder id="cpMainBody" runat="server">
+                            </asp:ContentPlaceHolder>
+                        
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr> 
+                <td valign="bottom">
+                                                   
+                </td>
+            </tr>
+            </table>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
