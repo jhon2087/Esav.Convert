@@ -52,47 +52,47 @@ public partial class FormDocuments_Reportes_FrmComunicacionBaja : BasePage
 
     private void cargarGrilla(DateTime _fechaInicial, DateTime _FechaFinal, string tipodoc, int idx)
     {
-        //RepConcBE servicioDocument = new RepConcBE();
+        ResumenComunicacion servicioDocument = new ResumenComunicacion();
 
-        //string FInicial = _fechaInicial.Year + "-" + string.Format("{0:00}", _fechaInicial.Month) + "-" + string.Format("{0:00}", _fechaInicial.Day);
-        //string FFinal = _FechaFinal.Year + "-" + string.Format("{0:00}", _FechaFinal.Month) + "-" + string.Format("{0:00}", _FechaFinal.Day);
+        string FInicial = _fechaInicial.Year + "-" + string.Format("{0:00}", _fechaInicial.Month) + "-" + string.Format("{0:00}", _fechaInicial.Day);
+        string FFinal = _FechaFinal.Year + "-" + string.Format("{0:00}", _FechaFinal.Month) + "-" + string.Format("{0:00}", _FechaFinal.Day);
 
-        //totalRecords = servicioDocument.obtenerRepDocumentosElectronicosFilasDA(CodigoEmisor, FInicial, FFinal, tipodoc);
-        //totalPages = totalRecords / pageSize;
-        //if ((pageSize * totalPages) != totalRecords)
-        //{
-        //    totalPages++;
-        //}
+        totalRecords = servicioDocument.NroFilasResCom(tipodoc, FInicial, FFinal, CodigoEmisor);
+        totalPages = totalRecords / pageSize;
+        if ((pageSize * totalPages) != totalRecords)
+        {
+            totalPages++;
+        }
 
 
-        //List<RepConcBE> lRepDocumento = servicioDocument.ListarRepDocumentosElectronicosDA(CodigoEmisor, FInicial, FFinal, tipodoc, serie, pageSize, curPage).ToList();
-        //rptListado.DataSource = lRepDocumento;
-        //rptListado.DataBind();
+        List<ResComunica> lRepDocumento = servicioDocument.ResumenComunicacionBaja(curPage, pageSize, FInicial, FFinal, tipodoc, CodigoEmisor).ToList();
+        rptListado.DataSource = lRepDocumento;
+        rptListado.DataBind();
 
     }
     public void cargarGrillas(string _fechaInicial, string _FechaFinal, string tipodoc, string idx)
     {
-        //try
-        //{
-        //    curPage = Convert.ToInt32(idx);
-        //    DateTime fechaini = Convert.ToDateTime(_fechaInicial);
-        //    DateTime fechafin = Convert.ToDateTime(_FechaFinal);
-        //    cargarGrilla(fechaini, fechafin, tipodoc, curPage);
+        try
+        {
+            curPage = Convert.ToInt32(idx);
+            DateTime fechaini = Convert.ToDateTime(_fechaInicial);
+            DateTime fechafin = Convert.ToDateTime(_FechaFinal);
+            cargarGrilla(fechaini, fechafin, tipodoc, curPage);
 
-        //    AddCallbackValue("0");
-        //    AddCallbackControl(rptListado);
+            AddCallbackValue("0");
+            AddCallbackControl(rptListado);
 
-        //}
-        //catch (FaultException ex)
-        //{
-        //    AddCallbackValue("-1");
-        //    AddCallbackValue("Service :" + ex.Message);
-        //}
-        //catch (Exception ex)
-        //{
-        //    AddCallbackValue("-1");
-        //    AddCallbackValue("Application :" + ex.Message);
-        //}
+        }
+        catch (FaultException ex)
+        {
+            AddCallbackValue("-1");
+            AddCallbackValue("Service :" + ex.Message);
+        }
+        catch (Exception ex)
+        {
+            AddCallbackValue("-1");
+            AddCallbackValue("Application :" + ex.Message);
+        }
     }
 
     protected void rptListado_ItemDataBound(object sender, RepeaterItemEventArgs e)

@@ -86,17 +86,11 @@
             <table class="table table-striped responsive-utilities jambo_table dataTable"  width="100%" >
           
                 <tr  style="background-color: #3F4458;">       
-                 <th style="color:white;" class="headerGlass" width="15%"><b><asp:Literal runat="server" id="Li77" Text="<%$Resources:Label, lblFecha %>"></asp:Literal></b></th>                     
-                 <th style="color:white;" class="headerGlass" width="15%"><b><asp:Literal runat="server" id="Lil78" Text="<%$Resources:Label, lblTipo %>"></asp:Literal></b></th>                     
-                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Lil71" Text="<%$Resources:Label, lblNroDocumento %>"></asp:Literal></b></th>
-                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Ll74" Text="<%$Resources:Label, lblMoneda %>"></asp:Literal></b></th>      
-                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Lil79" Text="<%$Resources:Label, lblValorVenta %>"></asp:Literal></b></th>      
-                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Lil170" Text="<%$Resources:Label, lblTotalIgv %>"></asp:Literal></b></th>      
-                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Litl711" Text="<%$Resources:Label, lblTotalisc %>"></asp:Literal></b></th>      
-                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Lal172" Text="<%$Resources:Label, lblTotalOtros %>"></asp:Literal></b></th>      
-                  <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Lral75" Text="<%$Resources:Label, lblTotaltotalotrostributos %>"></asp:Literal></b></th>        
-                  <th style="color:white;" class="headerGlass"  width="5%"> <b><asp:Literal runat="server" id="Lit773" Text="<%$Resources:Label, lblTotalimportesoles %>"></asp:Literal></b></th>
-                 <th style="color:white;" class="headerGlass"  width="5%"> <b><asp:Literal runat="server" id="Literal1" Text="<%$Resources:Label, lblTotalimportedolares %>"></asp:Literal></b></th>
+                 <th style="color:white;" class="headerGlass" width="15%"><b><asp:Literal runat="server" id="Li77" Text="IDCOMUNICACION"></asp:Literal></b></th>                     
+                 <th style="color:white;" class="headerGlass" width="15%"><b><asp:Literal runat="server" id="Lil78" Text="NRODOCUMENTO"></asp:Literal></b></th>                     
+                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Lil71" Text="SERIE"></asp:Literal></b></th>
+                 <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Ll74" Text="TIPODOC"></asp:Literal></b></th>      
+                    <th style="color:white;" class="headerGlass" width="5%"><b><asp:Literal runat="server" id="Literal1" Text="DESCARGA"></asp:Literal></b></th> 
                   </tr>
 
 
@@ -105,20 +99,11 @@
         
                 <tr  class="dataItemRow">
                                         
-                        <td class="dataItem" align="center"><%# Eval("FechaEmisionREP")%></td>
-                        <td class="dataItem"  align="center"><%# Eval("TipoDocumento")%></td>
-                        <td  class="dataItem"  align="center"><%# Eval("NroDocumento")%></td>
-                        <td  class="dataItem" align="center"><%# Eval("moneda")%></td>
-                         <td  class="dataItem" align="center"><%# Eval("ValorVenta")%></td>
-                          
-                         <td  class="dataItem" align="center"><%# Eval("TotalIgv")%></td>
-                         <td class="dataItem" align="center"><%# Eval("TotalIsc")%></td>
-                           
-                           <td class="dataItem" align="center"><%# Eval("TotalOtros")%></td>
-                        <td class="dataItem"  align="center"><%# Eval("TotalOtrostributos")%></td>
-                        <td  class="dataItem"  align="center"><%# Eval("ImporteTotal")%></td>
-                        <td  class="dataItem"  align="center"><%# Eval("ImporteTotaldolares")%></td>
-                        
+                        <td class="dataItem" align="center"><%# Eval("IDCOMUNICACION")%></td>
+                        <td class="dataItem"  align="center"><%# Eval("NRODOC")%></td>
+                        <td  class="dataItem"  align="center"><%# Eval("SERIE")%></td>
+                        <td  class="dataItem" align="center"><%# Eval("TIPODOC")%></td>
+                         <td  class="dataItem" align="center"></td>                        
                                        
                 </tr>
                                    
@@ -315,7 +300,7 @@
 
         }
         function btnSalir_onclick() {
-
+           
         }
 
 </script>
